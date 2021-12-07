@@ -2,4 +2,9 @@
     <string name="app_name">MemeMaker</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello dad fragment</string>
+    <string name="add_text">Add Text</string>
+    <string name="change_internet">Internet</string>
+    <string name="change_device">Device</string>
+    <string name="save_progress">Save Progress</string>
+    <string name="publish_progress">Publish</string>
 </resources>

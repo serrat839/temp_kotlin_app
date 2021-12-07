@@ -4,10 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MemeCanvasFragment">
-
-    <TextView
+    <RelativeLayout
+        android:id="@+id/canvas_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="and I'm the baby!" />
+        android:background="#26ce61">
+        <ImageView
+            android:id="@+id/meme_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="124dp"
+            android:src="@mipmap/frog"
+            />
+        <ImageView
+            android:id="@+id/meme"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="124dp"
+            android:src="@mipmap/frog"
+            />
+    </RelativeLayout>
 
 </FrameLayout>

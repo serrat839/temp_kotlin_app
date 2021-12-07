@@ -6,16 +6,62 @@
     android:orientation="vertical"
     tools:context=".MemeCanvasNavFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/fragment_container_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:name="edu.uw.serrat.mememaker.MemeCanvasFragment" />-->
+
+    <!--        TODO: replace 500dp with some weight magics-->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_blank_fragment" />
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_container_view"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/from_internet"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/change_internet"
+            />
+        <Button
+            android:id="@+id/from_device"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/change_device"
+            />
+    </LinearLayout>
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:name="edu.uw.serrat.mememaker.MemeCanvasFragment" />
+        android:layout_height="500dp"
+        android:id="@+id/thebaby"
+        />
+    <Button
+        android:id="@+id/add_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/add_text"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/save_progress"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/save_progress"
+            />
+        <Button
+            android:id="@+id/publish"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/publish_progress"
+            />
+    </LinearLayout>
 
 </LinearLayout>
